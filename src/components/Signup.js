@@ -30,7 +30,9 @@ export const Signup = () => {
       }}
       validationSchema={validate}
       onSubmit={(values) => {
-        console.log(values);
+        alert(
+          `${values.firstName} ${values.lastName}, you are signed up! Please confirm an email was sent to ${values.email}.`
+        );
       }}
     >
       {(formik) => (
